@@ -13,7 +13,7 @@ var inputOutput = (function() {
         sendOutput: function(tip, bill, num) {
             return {
                 tipOutput: document.getElementById('tip').innerHTML = 'Total tip: ' + tip,
-                billOutput: document.getElementById('total-bill').innerHTML ='Total bill: ' + bill,
+                billOutput: document.getElementById('total-bill').innerHTML = 'Total bill: ' + bill,
                 numOutput: document.getElementById('per-person').innerHTML = 'Total per person: ' + num
             };
         }
@@ -36,6 +36,7 @@ var calculations = (function() {
 
 
 var controller = (function(inCon, calc) {
+    var elements = inCon.getElementIDs;
 
     var eventListeners = function() {
         document.getElementById('submit-button').addEventListener('click', function() {
@@ -64,9 +65,10 @@ var controller = (function(inCon, calc) {
 
     var resetForm = function() {
         document.getElementById('input-form').reset();
-        document.getElementById('tip').innerHTML = 'Total tip: ' + tip,
-        document.getElementById('total-bill').innerHTML ='Total bill: ' + bill,
-        document.getElementById('per-person').innerHTML = 'Total per person: ' + num
+
+        document.getElementById('tip').innerHTML = 'Total tip: ';
+        document.getElementById('total-bill').innerHTML ='Total bill: ';
+        document.getElementById('per-person').innerHTML = 'Total per person: ';
     }
 
     return {
