@@ -30,13 +30,13 @@ h1 {
 #left {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 250px;
     align-items: center;
     padding-top: 15px;
 }
 #right {
     display: flex;
-    width: 50%;
+    width: 250px;
     flex-direction: column;
     margin-top: 20px;
     border-left: 1px solid gray;
@@ -74,6 +74,6 @@ input[type=text] {
 
 @media (max-width: 600px) {
     #content {
-        flex-direction: row;
+        flex-direction: column;
     }
 }
