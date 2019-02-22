@@ -24,6 +24,7 @@ h1 {
 }
 #content {
     display: flex;
+    max-width: 100%;
 }
 #left {
     display: flex;
