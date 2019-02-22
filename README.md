@@ -1,3 +1,3 @@
-Simple Javascript Tip Calculator
+Simple Javascript Tip Calculator 
 
-[Live Example](https://ryanaltobello.github.io/tip-calc/)
+[Live App](https://ryanaltobello.github.io/tip-calc/)
