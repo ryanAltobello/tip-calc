@@ -21,7 +21,7 @@ h1 {
     font-size: 1.8em;
     margin-bottom: 10px;
 }
-#top {
+#content {
     display: flex;
 }
 #left {
@@ -67,4 +67,10 @@ input[type=text] {
     padding: 10px 20px;
     border-radius: 3px;
     color: darkslategray;
+}
+
+@media (max-width: 600px) {
+    #content {
+        flex-direction: row;
+    }
 }
