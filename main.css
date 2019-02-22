@@ -25,6 +25,7 @@ h1 {
 #content {
     display: flex;
     max-width: 100%;
+    margin: auto;
 }
 #left {
     display: flex;
